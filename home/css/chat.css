@@ -1,0 +1,140 @@
+.chat {
+  position: fixed;
+  width: 15vh;
+  height: 15vh;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  background-color: var(--bg-primary);
+  border-radius: 25%;
+  border: 10px solid var(--bg-secondary);
+  margin: 0.5vw;
+  transition: all var(--transition-speed) ease;
+}
+.chat.not-active {
+  cursor: pointer;
+}
+.chat-img-container {
+  width: 100%;
+  height: 100%;
+}
+.chat-img-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  filter: invert(100%) opacity(100%);
+  transition: all var(--transition-speed) ease;
+}
+.chat-content {
+  width: 100%;
+  height: 100%;
+  color: var(--reddy);
+  filter: opacity(0%);
+  transition: all var(--transition-speed) ease;
+}
+.chat-content h1 {
+  text-align: center;
+  line-height: 7vh;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+.chat-content h2 {
+  text-align: center;
+  line-height: 4vh;
+}
+.chat-content form {
+  position: relative;
+  width: 100%;
+  height: 7vh;
+  margin-bottom: 4vh;
+  border-bottom: 3px solid var(--text-title);
+}
+.input-friend {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.chat-box-container {
+  position: relative;
+  width: 100%;
+  height: 42vh;
+}
+.chat-box {
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  overflow-y: scroll;
+  background-color: white;
+  border: 2px solid black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gray;
+  bottom: 0;
+  padding-top: 0.5vw;
+}
+.message {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  height: 10%;
+}
+.message-img-container {
+  position: relative;
+  object-fit: cover;
+}
+.message-img {
+  position: absolute;
+  width: 1.6vw;
+  height: 1.6vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  object-fit: cover;
+}
+.message-content-container {
+  position: relative;
+}
+.message-content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1vw;
+}
+.close-btn {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: white;
+}
+.arrow {
+  position: relative;
+  width: 5vh;
+  height: 5vh;
+  transform: rotateZ(90deg);
+  transition: all var(--transition-speed) ease;
+}
+.arrow svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  height: 100%;
+}

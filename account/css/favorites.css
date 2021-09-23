@@ -1,0 +1,11 @@
+/* ================================ Favorites ================================ */
+.favorites-div {
+  width: 75vw;
+  padding-top: 3vw;
+}
+.favorites-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 40%;
+}

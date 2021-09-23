@@ -1,0 +1,73 @@
+/* ================================ Friend_list ================================ */
+.all-friend {
+  width: 100%;
+}
+.friends-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 40%;
+  padding-top: 4vw;
+}
+.friend {
+  position: relative;
+  min-width: 8vw;
+  display: flex;
+  height: 10vw;
+  margin: 0 0.5vw;
+}
+.friend a {
+  text-decoration: none;
+  width: 100%;
+  color: var(--text-main);
+}
+.friend-image {
+  position: relative;
+  width: 100%;
+  min-width: 6vw;
+  height: 75%;
+}
+.friend-image-container {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.friend-image img {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.friend-username {
+  position: relative;
+  text-align: center;
+  height: 25%;
+  width: 100%;
+}
+.friend-username p {
+  width: 100%;
+}
+.delete-button {
+  width: 2vw;
+  margin-left: 0.5vw;
+  margin-right: 1vw;
+}
+.delete-button img {
+  transition: var(--transition-speed);
+  border-radius: 20%;
+}
+.border {
+  border-right: 3px solid var(--text-title);
+}
+
+@media (hover) {
+  .delete-button img:hover {
+    background-color: var(--bg-primary);
+  }
+}

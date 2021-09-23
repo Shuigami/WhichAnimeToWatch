@@ -1,0 +1,166 @@
+/* ================================ Account Details ================================ */
+.title-account {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 3vw;
+}
+.title-account h1 {
+  text-align: center;
+  font-size: 2vw;
+}
+.title-account p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 2vw;
+  line-height: 5.15vw;
+  text-align: right;
+  font-size: 1vw;
+}
+.title-account p > a {
+  color: var(--text-title);
+}
+.account-settings {
+  list-style: none;
+}
+.account-settings-item {
+  position: relative;
+  display: flex;
+  height: 5vw;
+}
+.biography {
+  height: max-content;
+}
+.account-settings-item h2,
+.account-settings-item h1 {
+  width: 25%;
+  padding: 0 2vw;
+  line-height: 5vw;
+}
+.account-settings-item h1 {
+  width: 50%;
+  color: var(--text-title);
+}
+.image {
+  position: relative;
+  height: 10vw;
+}
+.image h2 {
+  line-height: 10vw;
+}
+.account-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 13%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+.account-pen-imageuh {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: 2vw;
+  transform: translateY(-50%);
+}
+.account-pen-imageuh .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.account-pen-imageuh label {
+  position: relative;
+  padding: 0.3vw 0;
+  padding-right: 1.5vw;
+  padding-left: 3.5vw;
+}
+label img {
+  position: absolute;
+  width: 1.5vw;
+  top: 50%;
+  transform: translate(-150%, -50%);
+  filter: invert(100%);
+}
+.account-pen-imageuh .inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: var(--bg-primary);
+  display: inline-block;
+  transition: var(--transition-speed);
+}
+.account-pen {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: 2vw;
+  transform: translateY(-50%);
+}
+.account-pen > img {
+  position: absolute;
+  width: 1.5vw;
+  top: 50%;
+  transform: translate(-150%, -50%);
+  filter: invert(100%);
+}
+.inputdivtext {
+  width: 50%;
+}
+.inputdiv {
+  position: relative;
+  width: 25%;
+  pointer-events: none;
+}
+.inputdivbg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.test {
+  position: relative;
+  background-color: var(--bg-primary);
+  filter: invert(100%);
+  border-radius: 25%;
+  width: 5vw;
+  height: 5vw;
+  pointer-events: all;
+}
+.inputImage {
+  position: absolute;
+  width: 1.5vw;
+  top: 50%;
+  transform: translate(-150%, -50%);
+  filter: invert(100%);
+}
+textarea {
+  width: 110%;
+  max-width: 110%;
+}
+.inputImageBio {
+  position: absolute;
+  width: 3vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input[type="text"] {
+  width: 10vw;
+  height: 1.5vw;
+}
+.account-pen-imageuh {
+  width: fit-content;
+  min-width: 10vw;
+}
+
+@media (hover) {
+  .inputfile:focus + label,
+  .inputfile + label:hover {
+    background-color: var(--text-title);
+  }
+}

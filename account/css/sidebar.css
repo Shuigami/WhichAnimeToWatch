@@ -1,0 +1,73 @@
+.info_container {
+  transition: all var(--transition-speed) ease-in-out;
+}
+.else {
+  transition: all var(--transition-speed) ease-in-out;
+}
+/* ================================ Sidebar ================================ */
+.sidebar {
+  min-height: 82vh;
+  position: relative;
+  transition: all var(--transition-speed) ease-in-out;
+}
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+.sidebar-item {
+  width: 100%;
+  height: 10%;
+  transition: all var(--transition-speed) ease-in-out;
+}
+.sidebar-item a {
+  text-decoration: none;
+  color: var(--text-title);
+}
+.sidebar-item h1 {
+  display: inline-block;
+  width: 100%;
+  line-height: 10vh;
+  text-align: center;
+  transition: all calc(var(--transition-speed) / 2) linear;
+}
+/* ================================ Toogle Button ================================ */
+.container-toggle {
+  position: absolute;
+  top: 1vw;
+  left: 105%;
+  z-index: 1;
+}
+.toggle-button {
+  width: 80px;
+  height: 40px;
+  background: gray;
+  border-radius: 30px;
+  padding: 5px;
+  transition: all var(--transition-speed) ease-in-out;
+}
+.toggle-button > .inner-circle {
+  width: 30px;
+  height: 30px;
+  background: var(--clr-main);
+  border-radius: 50%;
+  transition: all calc(var(--transition-speed) / 2) ease-in-out;
+}
+.toggle-button.active {
+  background: var(--text-title);
+}
+.toggle-button.active > .inner-circle {
+  margin-left: 40px;
+  background: var(--clr-logo);
+}
+@media (hover) {
+  .toggle-button.active:hover {
+    background: var(--reddy);
+  }
+  .toggle-button.active:hover .inner-circle {
+    background: var(--logo-on);
+    transform: translate(-20%);
+  }
+}

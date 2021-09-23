@@ -1,0 +1,108 @@
+body {
+  color: var(--text-main);
+}
+
+/* ================================ All ================================ */
+.container-account {
+  display: flex;
+}
+
+/* ================================ Size adapt ================================ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  li h1,
+  li h2 {
+    font-size: 3vw;
+  }
+  li p {
+    font-size: 1.8vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  li h1,
+  li h2 {
+    font-size: 3vw;
+  }
+  li p {
+    font-size: 1.8vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container-account {
+    flex-direction: column;
+  }
+  .sidebar-list {
+    flex-direction: row;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: 0px solid var(--text-primary);
+    border-bottom: 6px solid var(--text-primary);
+  }
+  .sidebar-item {
+    height: 10%;
+    border-bottom: 0px solid var(--text-primary);
+    border-right: 6px solid var(--text-primary);
+  }
+  .sidebar-item h1 {
+    line-height: 5vh;
+  }
+  .else {
+    width: 100vw;
+  }
+  li h1,
+  li h2 {
+    font-size: 2.5vw;
+  }
+  li p {
+    font-size: 1.3vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  li h1,
+  li h2 {
+    font-size: 1.5vw;
+  }
+  li p {
+    font-size: 0.8vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container-account {
+    flex-direction: row;
+  }
+  .sidebar-list {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 25vw;
+    border-right: 6px solid var(--text-primary);
+    border-bottom: 0px solid var(--text-primary);
+  }
+  .sidebar-item {
+    height: 10%;
+    border-bottom: 6px solid var(--text-primary);
+    border-right: 0px solid var(--text-primary);
+  }
+  .sidebar-item h1 {
+    line-height: 10vh;
+  }
+  .else {
+    width: 75vw;
+  }
+}
+@media (hover) {
+  a:hover,
+  .title-account p:hover > a {
+    color: var(--reddy);
+  }
+}

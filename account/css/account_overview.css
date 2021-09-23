@@ -1,0 +1,48 @@
+/* ================================ Account ================================ */
+.sidebar {
+  width: 25vw;
+}
+.title-account {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 3vw;
+}
+.title-account h1 {
+  text-align: center;
+  font-size: 2vw;
+}
+.title-account p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 3vw;
+  line-height: 5.15vw;
+  text-align: right;
+  font-size: 1vw;
+}
+.title-account p > a {
+  color: var(--text-title);
+  transition: all var(--transition-speed) ease;
+}
+.account_view {
+  width: 75vw;
+}
+.border_account_view {
+  left: 75vw;
+}
+.friends {
+  border-left: 0.3vw solid var(--text-title);
+}
+.info {
+  padding: 0 1vw;
+}
+.info_country {
+  width: max-content;
+  padding: 0 2vw;
+}
+.info_country img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

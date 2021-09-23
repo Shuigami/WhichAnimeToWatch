@@ -1,0 +1,67 @@
+/* ================================ Friend_search ================================ */
+.container-search {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+.container-search input[type="text"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 50%;
+  font-size: 1vw;
+}
+.inputImage {
+  position: absolute;
+  width: 1.5vw;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  filter: invert(100%);
+}
+.container-friends-list {
+  position: relative;
+  width: 100%;
+}
+.container-friends-list ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.friend_result {
+  position: relative;
+  width: 10%;
+  height: 10vw;
+  margin: 2%;
+}
+.friend_result a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+.friend_image {
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+.friend_image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.friend_name {
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+.friend_name p {
+  text-align: center;
+  font-size: 1.5vw;
+}
