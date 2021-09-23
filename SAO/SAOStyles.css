@@ -1,0 +1,52 @@
+/*=================================================================*/
+.character-list {
+  width: 100%;
+}
+.character {
+  width: 100%;
+  height: 20vh;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.presentation {
+  width: 30%;
+  height: 20vh;
+  text-align: center;
+}
+.character-img {
+  width: 100%;
+  height: 15vh;
+}
+.img-container {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  -moz-box-shadow: 0 0 5px 5px rgb(40, 40, 40);
+  -webkit-box-shadow: 0 0 5px 5px rgb(40, 40, 40);
+  box-shadow: 0 0 5px 5px rgb(40, 40, 40);
+}
+.character-img img {
+  width: 100%;
+}
+.character-name {
+  height: 5vh;
+}
+.character-bio {
+  width: 70%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+#A {
+  width: auto;
+  height: 100%;
+  margin-left: -30%;
+}
+#C {
+  margin-top: -20%;
+}
